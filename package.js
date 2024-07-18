@@ -7,8 +7,8 @@ Package.describe({
 });
 
 Package.onUse(function(api) {
-	api.versionsFrom(['2.3', '3.0-alpha.19']);
-	api.use(["typescript@3.0.0 || 4.0.0", "mongo", "random", "ecmascript", "check"], "server");
+	api.versionsFrom(['2.3', '3.0.1']);
+	api.use(["typescript", "mongo", "random", "ecmascript", "check"], "server");
 	api.mainModule("jobs.ts", "server");
 	api.export(["Jobs", "TypedJob"]);
 });
